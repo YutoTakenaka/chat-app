@@ -6,7 +6,7 @@
   </div>
   <div class="left-header">
     <div class="header-btn">
-    <a href="#">チャットを終了する</a>
+    <%= link_to 'チャットを終了する', room_path(@room), method: :delete %>
     </div>
   </div>
 </div>
@@ -24,5 +24,5 @@
       <%= f.file_field :image, class: 'hidden' %>
     </label>
   </div>
-  <%= f.submit '送信', class: 'form_submit' %>
+  <%= f.submit '送信', class: 'form-submit' %>
 <% end %>
